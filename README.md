@@ -1,8 +1,10 @@
 # Welcome to React Router!
+    
+
+
+    Build an AI-powered Resume Analyzer with React, React Router, and Puter.js! Create job listings, upload candidate resumes, and use AI to automatically evaluate and match resumes to job requirements.
 
 A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
 
 ## Features
 
@@ -14,33 +16,31 @@ A modern, production-ready template for building full-stack React applications u
 - 🎉 TailwindCSS for styling
 - 📖 [React Router docs](https://reactrouter.com/)
 
-## Getting Started
 
-### Installation
+## Puter Js
 
-Install the dependencies:
+What is Puter.js?
 
-```bash
-npm install
-```
+Puter.js is a JavaScript library/SDK that lets you do backend stuff right from the frontend browser code — with literally zero backend servers, no API keys, no backend config. It’s kind of like giving your frontend magical superpowers without needing a traditional backend. 
+ 
 
-### Development
+It claims to give you:
 
-Start the development server with HMR:
+Cloud Storage (save files directly from JS)
 
-```bash
-npm run dev
-```
+Databases & Key‑Value stores
 
-Your application will be available at `http://localhost:5173`.
+Authentication
 
-## Building for Production
+AI access (Claude, GPT, Gemini, etc.)
 
-Create a production build:
+Hosting & publishing pages
 
-```bash
-npm run build
-```
+OCR, networking, text‑to‑speech, and more
+
+All from a single <script> tag or npm package
+(no server code needed)
+
 
 ## Deployment
 
@@ -77,11 +77,3 @@ Make sure to deploy the output of `npm run build`
 │   ├── client/    # Static assets
 │   └── server/    # Server-side code
 ```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
