@@ -10,6 +10,8 @@ import {
 // Generated route types may not be present in all environments.
 // Avoid depending on the auto-generated `+types` so the app runs without them.
 import "./app.css";
+import { usePuterStore } from "./lib/puter";
+import { useEffect } from "react";
 
 export const links = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -25,6 +27,13 @@ export const links = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+
+
+  const {init } = usePuterStore();
+useEffect(() => {
+  init();
+}, []);
+
   return (
     <html lang="en">
       <head>
@@ -34,6 +43,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <script src="https://js.puter.com/v2/"></script>
         {children}
         <ScrollRestoration />
         <Scripts />
