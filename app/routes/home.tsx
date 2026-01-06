@@ -1,3 +1,5 @@
+
+
 import { resumes } from "~/constants/Index";
 import Navbar from "~/components/Navbar";
 import ResumeCard from "~/components/ResumeCard";
@@ -16,15 +18,15 @@ export function meta() {
 }
 
 export default function Home() {
-  const { auth } = usePuterStore();
+  const { auth, isLoading } = usePuterStore();
   const navigate: NavigateFunction = useNavigate();
 
   useEffect(() => {
-    // If user is NOT authenticated, send to Auth page
-    if (!auth.isAuthenticated) {
+    // Wait for auth check to finish before redirecting to Auth
+    if (!isLoading && !auth.isAuthenticated) {
       navigate("/auth?next=/");
     }
-  }, [auth.isAuthenticated, navigate]);
+  }, [isLoading, auth.isAuthenticated, navigate]);
 
   return (
     <main className="bg-[url('/images/bg-main.svg')] bg-cover">

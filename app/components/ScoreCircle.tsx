@@ -10,7 +10,7 @@ const ScoreCircle = ({ score = 75 }: { score: number }) => {
     <div className="relative w-[100px] h-[100px]">
       <svg
         height="100%"
-        width="100%"
+        width="100%" 
         viewBox="0 0 100 100"
         className="transform -rotate-90"
       >
