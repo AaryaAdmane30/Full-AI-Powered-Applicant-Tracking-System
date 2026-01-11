@@ -13,7 +13,7 @@
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "rootDirs": [".", "app/types"],
-    "baseUrl": ".",
+    
     "paths": {
       "~/*": ["./app/*"]
     },
